@@ -15,7 +15,7 @@ function checktime(interval){
         }
     })
     document.cookie = "staytime_" + now.getDate() + "=" + stay_time + "; max-age=86400";
-    if ( stay_time > 60 ) {
+    if ( stay_time > 60 * 60 ) {
         alert('１８歳未満の香川県民は１時間以上サイトを閲覧できません');
     }
 }
